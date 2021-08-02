@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1>PRO - RUNNER</h1>
+    </br>
+    <meta charset="utf-8" />
+    <title>Delta Task-2</title>
+
+    <style type="text/css">
+        canvas {
+            padding: 10px yellow;
+            border: 10px yellow;
+            border-radius: 20px;
+            background: linear-gradient(rgb(76, 127, 236), white, rgb(62, 158, 62));
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+            float: center;
+            
+        }
+        
+        head {
+            background-color: rgb(0, 204, 255);
+    
+        } 
+            
+        
+        body {
+           
+            background-image: linear-gradient(to bottom right, rgb(6, 215, 243), rgb(245, 10, 225));
+        }
+        
+        button {
+            background-color: #c03491;
+            color: white;
+            padding: 15px 32px;
+            font-size: 16px;
+            text-align: center;
+            float: center;
+        }
+        
+        .grid-container-4 {
+            display: grid;
+            grid-template-columns: auto;
+            height: 80px;
+            width: 90px;
+            background-color: #8be0b5;
+            padding: 5px;
+            text-align: center;
+            font-family: serif;
+            font-size: xx-large;
+            border: 15px solid  #c03491;
+            border-radius: 7px;
+        }
+        
+        h1 {
+            font-family: 'Lucida Sans';
+            color: rgb(253, 35, 6);
+            font-size: xx-large;
+            letter-spacing: 1.5px;
+            margin: auto;
+            text-align: center;
+        }
+        
+        h3 {
+            font-family: 'Lucida Sans';
+            color: rgb(243, 35, 8);
+            font-size: 155%;
+            letter-spacing: 1px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width="800" height="600" onclick="jump ('x');"></canvas>
+    <h3>POINTS</h3>
+
+    <div class="grid-container-4">
+
+        <div class="score" id="sc">0</div>
+
+    </div>
+    </br>
+    <button id="start_game" onclick="move();">Start</button>
+
+</body>
+
+<script src="JS-T2.js"></script>
+
+</html>
